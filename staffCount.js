@@ -20,6 +20,11 @@ function init(count) {
 
 //开始报数，count：总人数，num：数到的数字
 function start(count, num) {
+    if (isNaN(parseInt(num))) {
+        console.log("数的应该是数字");
+        return;
+    }
+    num=parseInt(num);
     //报数次数
     let times = 0;
     let staff = init(count);
@@ -49,6 +54,7 @@ function start(count, num) {
             console.log("没有人数数");
             return;
         }
+
         times++;
         console.log("第" + times + "次:", arr);
         if (arr.length == 1) {
@@ -74,4 +80,4 @@ function start(count, num) {
 }
 
 //入口。
-start('6', 3);
+start('6', '111a');
