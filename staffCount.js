@@ -45,6 +45,10 @@ function start(count, num) {
 
     //数数，并输出剩余人组成的数组，及跳出人的次数
     function doCount(arr) {
+        if (arr.length == 0) {
+            console.log("没有人数数");
+            return;
+        }
         times++;
         console.log("第" + times + "次:", arr);
         if (arr.length == 1) {
@@ -68,5 +72,6 @@ function start(count, num) {
 
     console.log(doCount(staff));
 }
+
 //入口。
-start(100, 3);
+start('6', 3);
