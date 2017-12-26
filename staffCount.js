@@ -18,7 +18,7 @@ function init(count) {
     return arr;
 }
 
-//开始报数
+//开始报数，count：总人数，num：数到的数字
 function start(count, num) {
     //报数次数
     let times = 0;
@@ -68,5 +68,5 @@ function start(count, num) {
 
     console.log(doCount(staff));
 }
-
-start(99999, 20000);
+//入口。
+start(100, 3);
